@@ -14,3 +14,5 @@ echo "Installing latest version of terraform from hashicorp"
 [[ ${USER} == "root" ]] && yum -y install terraform || sudo yum -y install terraform
 
 echo "Latest version of terraform installed sucessfully" && terraform -version
+
+echo "Adding auto-completee feature" && terraform -install-autocomplete
